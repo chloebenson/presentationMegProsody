@@ -6,10 +6,13 @@ randomize_trials = false;
 default_attenuation = 0.2;
 default_pan = 0.0;
 
+write_Codes = true;
+pulse_width = 10;
+
 begin;
 
 array {
-   sound { wavefile { filename = "C:\\Users\\Presentation User\\Desktop\\meg_prosody_present\\media\\audio\\1_ang_ss_trimF.wav"; } s1_ang_ss_trimF;};
+	sound { wavefile { filename = "C:\\Users\\Presentation User\\Desktop\\meg_prosody_present\\media\\audio\\1_ang_ss_trimF.wav"; } s1_ang_ss_trimF;};
 	sound { wavefile { filename = "C:\\Users\\Presentation User\\Desktop\\meg_prosody_present\\media\\audio\\1_fea_ss_trimF.wav"; } s1_fea_ss_trimF;};
 	sound { wavefile { filename = "C:\\Users\\Presentation User\\Desktop\\meg_prosody_present\\media\\audio\\1_fea_sw_trimF.wav"; } s1_fea_sw_trimF;};
 } stim;
@@ -37,6 +40,9 @@ trial {
 		sound {
 			wavefile s1_ang_ss_trimF;
 		} stimsound;
+		nothing {};
+		time = 0;
+		port_code = 1;
 	}event1;
 }soundcross;
 
