@@ -16,23 +16,23 @@ default_pan = 0.0;
 begin;
 
 array {
-   sound { wavefile { filename = "C:\\Users\\Presentation\\meg_prosody_present\\audio\\1_ang_ss_trimF.wav"; } s1_ang_ss_trimF;};
-	sound { wavefile { filename = "C:\\Users\\Presentation\\meg_prosody_present\\audio\\1_fea_ss_trimF.wav"; } s1_fea_ss_trimF;};
-	sound { wavefile { filename = "C:\\Users\\Presentation\\meg_prosody_present\\audio\\1_fea_sw_trimF.wav"; } s1_fea_sw_trimF;};
+   sound { wavefile { filename = "audio\\1_ang_ss_trimF.wav"; } s1_ang_ss_trimF;};
+	sound { wavefile { filename = "audio\\1_fea_ss_trimF.wav"; } s1_fea_ss_trimF;};
+	sound { wavefile { filename = "audio\\1_fea_sw_trimF.wav"; } s1_fea_sw_trimF;};
 } stim;
 
 #array<int> stim_order[78] = {,,,};
 
 picture {
 	bitmap {
-		filename = "C:\\Users\\Presentation\\meg_prosody_present\\img\\cross.bmp";
+		filename = "img\\cross.bmp";
 	};
 	x = 0; y = 0;
 }cross;
 
 picture {
 	bitmap {
-		filename = "C:\\Users\\Presentation\\meg_prosody_present\\img\\Emoticons_H.bmp";
+		filename = "img\\Emoticons_H.bmp";
 	};
 	x = 0; y = 0;
 }emoticons;
